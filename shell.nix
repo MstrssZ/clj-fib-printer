@@ -3,5 +3,6 @@ pkgs.mkShell{
     packages = with pkgs; [
         clojure
         leiningen
+        babashka
     ];
 }

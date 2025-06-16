@@ -1,6 +1,6 @@
-(ns fibanocci-printer.core-test
+(ns fibanocci-printer.main-test
   (:require [clojure.test :refer :all]
-            [fibanocci-printer.core :refer :all]))
+            [fibanocci-printer.main :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."

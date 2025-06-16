@@ -1,4 +1,4 @@
-(ns fibanocci-printer.core
+(ns fibanocci-printer.main
   (:gen-class))
 
 (defn -main
