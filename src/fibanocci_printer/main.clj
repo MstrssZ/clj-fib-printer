@@ -13,7 +13,7 @@
        (cond
          (> (+ p1 p2) end) (println "done")
          (= (+ p1 p2) end) (println (+ p1 p2))
-         (< (+ p1 p2) end) (do (println (+ p1 p2)) (fib '(p2 (+p2 p1) end)))
+         (< (+ p1 p2) end) (do (println (+ p1 p2)) (fib p2 (+ p2 p1) end))
           :else (println "Error: issue had")  ))
 
 (defn -main
@@ -24,5 +24,5 @@
     (>  (count args) 1) (do (println "Error: Provided too many arguments") (print-usage))
     :else
     ;;(println (first args))
-    (do (fib 0 1 (first args)))
+    (do (fib 0 1 (Integer/parseInt (first args))))
     ))
