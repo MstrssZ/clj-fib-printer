@@ -1,5 +1,6 @@
 (ns fibanocci-printer.main
   (:gen-class))
+
 (defn print-usage
   "print the useage of the program to stdout"
   []

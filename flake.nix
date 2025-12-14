@@ -16,7 +16,7 @@
             clojure-lsp
           ];
           shellHook = ''
-            export PS1='\[\e[92m\]nix@\h\[\e[0m\]:\[\e[38;5;129m\]\W\[\e[0m\]$(__git_ps1 " (%s)")\\$ '
+            export PS1='\[\e[92m\]nix@\h\[\e[0m\]:\[\e[38;5;129m\]\W\[\e[0m\]\\$ '
                       '';
         };
 
